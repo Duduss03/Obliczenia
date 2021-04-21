@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, #040B1C, #1D3674, #8092C3, #1D3674, #040B1C);
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0.8;
+    height: 257px;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+    opacity: 0.9;
+    height: 659px;
+}
+
+nav {
+    background-image: linear-gradient(#040B1C, #081F5E, #8092C3, #081F5E, #040B1C);
+    padding: 50px;
+    opacity: 0.9;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+article {
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+    padding: 10px;
+    text-align: left;
+    opacity: 1.0;
+}
+
+footer {
+    background-color: #000033;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    height: 53px;
+}
+
+.button {
+    background-color: #000033;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.p {
+    padding: 100px 300px;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.d {
+    align-self: center;
+    font-weight: bold;
+    font-size: xxx-large;
+    font-family: "Sofia";
+}
+
+.przy {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-left: 30px;
+    font-family: "Sofia";
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("bg.jpeg");
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top;
+    height: 100vh;
+    max-width: 2200px;
+}
+
+.wynik1 {
+    font-weight: bold;
+    font-size: 20px
+}
+
+.ob {
+    font-size: 30px;
+}
+
+.wyjście {
+    margin-left: 50px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #0B0B61;
+    color: white;
+    border: none;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    height: 300px;
+}
+
+.grid-container > div {
+    border: 1px solid #000000;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.wyjście {
+    margin-left: 50px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #0B0B61;
+    color: white;
+    border: none;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input {
+    font-size: large;
+}

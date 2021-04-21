@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gęstość</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+    <h2>Gęstość</h2>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="prdkosc.html" class="button">Prędkość</a></li>
+            <li><a href="droga.html" class="button">Droga</a></li>
+            <li><a href="czas.html" class="button">Czas</a></li>
+            <li><a href="gestosc.html" class="button">Gęstość</a></li>
+        </ul>
+    </nav>
+    <script type="text/javascript">
+        function oblicz1() {
+            var Masa = gestosc.Masa.value;
+            var objetosc = gestosc.objetosc.value;
+            var wynik = Masa / objetosc;
+            document.getElementById('wynik').innerHTML = `Gęstość wynosi: ${wynik} kg/m3`;
+        }
+    </script>
+    <div class="p">
+        <h1>Gęstość</h1>
+        <h3>Stosunek masy pewnej ilości substancji do zajmowanej przez nią objętości i nie zależy od wyboru
+            próbki.</h3>
+        <form name="gestosc">
+            <input id="Masa" type="text" placeholder="Masa w kilogramach"><br>
+            <input id="objetosc" type="text" placeholder="Objętość w metrach3 "><br>
+            <input id="policz" value="Oblicz" type="button" onclick="oblicz1()">
+        </form>
+        <p id="wynik"></p>
+    </div>
+
+</section>
+
+<footer style="display: flex">
+    <div style="align-self: center; flex-grow: 1"></div>
+    <div style="align-self: center; flex-grow: 1">Dominika Gajewska 2egm</div>
+    <div style="align-self: center; flex-grow: 1"><a href="index.html" class="wyjście" role="button">Powrót</a></div>
+</footer>
+
+</body>
+</html>
